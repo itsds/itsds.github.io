@@ -36,6 +36,7 @@ img {
   font-size: 20px;
   font-style: italic;
   font-weight: bold; 
+  text-transform: uppercase;
 }
 
 /* Change the color of links on hover */
