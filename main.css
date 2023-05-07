@@ -18,3 +18,7 @@ p {
 	font-size: 30px;
 	color: green;
 }
+
+img {
+  border-radius: 50%;
+}
