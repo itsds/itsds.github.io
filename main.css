@@ -7,11 +7,13 @@ body {
 
 h1 {
 	font-size: 50px;
+	font-style: italic;
 }
 
 p {
 	font-size: 30px;
 	color: green;
+	font-style: italic;
 }
 
 img {
