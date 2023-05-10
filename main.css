@@ -47,10 +47,10 @@ p {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 64px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: lightblue;
 }
 
 #hero p {
@@ -64,11 +64,11 @@ p {
 
 #hero p span {
   color: white;
-  font-weight: bold; 
+/*   font-weight: bold;  */
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
-  font-size: 64px;
+  font-size: 40px;
 }
 
 @media (min-width: 1024px) {
