@@ -135,4 +135,83 @@ footer {
   color: white;
   text-align: center;
 }
+/* Bookshelf page styles */
+body.bookshelf {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(45deg, #85d8ce 0%, #f6f7f9 100%);
+  color: #333;
+  padding: 40px;
+}
+
+.bookshelf h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #1a1a2e;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.bookshelf .container {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bookshelf .section {
+  background: white;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  flex: 1 1 320px;
+  padding: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.bookshelf .section:hover {
+  box-shadow: 0 25px 40px rgba(0,0,0,0.15);
+  transform: translateY(-7px);
+}
+
+.bookshelf .section h2 {
+  font-size: 1.8rem;
+  color: #16213e;
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 3px solid #0f3460;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.bookshelf ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+}
+
+.bookshelf ul li {
+  margin: 12px 0;
+  font-weight: 500;
+}
+
+.bookshelf a.pdf-link {
+  display: inline-block;
+  padding: 8px 15px;
+  color: #0f3460;
+  text-decoration: none;
+  border-radius: 7px;
+  background-color: #bbe1fa;
+  box-shadow: inset 2px 2px 5px #8badf7, inset -2px -2px 5px #d7e5fc;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.bookshelf a.pdf-link:hover {
+  background-color: #0f3460;
+  color: white;
+  box-shadow: 0 4px 15px rgba(15,52,96,0.4);
+}
+
 
