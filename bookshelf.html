@@ -28,5 +28,17 @@
       </ul>
     </div>
   </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.bookshelf .section');
+    sections.forEach((section, index) => {
+      section.style.opacity = 0;
+      section.style.transition = 'opacity 0.8s ease-out';
+      setTimeout(() => {
+        section.style.opacity = 1;
+      }, index * 600); // Adjust time for delay between sections
+    });
+  });
+</script>
 </body>
 </html>
