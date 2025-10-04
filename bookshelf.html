@@ -1,25 +1,110 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Book Shelf</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Shelf</title>
+  <link rel="stylesheet" href="main.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+      margin: 0;
+      padding: 40px 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #24305e;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .section-card {
+      background: #fefefe;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+      flex: 1 1 320px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .section-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 18px 36px rgba(0,0,0,0.15);
+    }
+    .section-card h2 {
+      font-size: 1.8rem;
+      color: #1a237e;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #3949ab;
+      width: 100%;
+      padding-bottom: 10px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      width: 100%;
+    }
+    ul li {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    a.pdf-link {
+      display: inline-block;
+      text-decoration: none;
+      color: #3949ab;
+      background: #e8eaf6;
+      padding: 10px 15px;
+      border-radius: 8px;
+      box-shadow: inset 2px 2px 5px #c5cae9, inset -2px -2px 5px #f3f4fb;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    a.pdf-link:hover {
+      background-color: #3949ab;
+      color: white;
+      box-shadow: 0 3px 8px rgba(57,73,171,0.4);
+    }
+  </style>
 </head>
 <body>
-    <h1 style="text-align:center;">Book Shelf</h1>
-
-    <h2>1. Currently Reading Books</h2>
-    <ul>
-        <li><a href="pdfs/Book1.pdf" target="_blank">Book 1 Title</a></li>
-    </ul>
-
-    <h2>2. Needs to Read</h2>
-    <ul>
-        <li><a href="pdfs/Book2.pdf" target="_blank">Book 2 Title</a></li>
-    </ul>
-
-    <h2>3. Already Completed</h2>
-    <ul>
-        <li><a href="pdfs/Book3.pdf" target="_blank">Book 3 Title</a></li>
-    </ul>
+  <h1>My Book Shelf</h1>
+  <div class="container">
+    <div class="section-card">
+      <h2>Currently Reading Books</h2>
+      <ul>
+        <li><a href="pdfs/currently-reading-book1.pdf" class="pdf-link" target="_blank">Book Title 1 (PDF)</a></li>
+        <!-- Add more books here -->
+      </ul>
+    </div>
+    <div class="section-card">
+      <h2>Needs to Read</h2>
+      <ul>
+        <li><a href="pdfs/needs-to-read-book1.pdf" class="pdf-link" target="_blank">Book Title 2 (PDF)</a></li>
+        <!-- Add more books here -->
+      </ul>
+    </div>
+    <div class="section-card">
+      <h2>Already Completed</h2>
+      <ul>
+        <li><a href="pdfs/completed-book1.pdf" class="pdf-link" target="_blank">Book Title 3 (PDF)</a></li>
+        <!-- Add more books here -->
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
